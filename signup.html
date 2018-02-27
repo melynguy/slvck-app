@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>slvck!</title>
+    <link rel="icon" href="img/page-icon.png">
+
+    <!-- Materialize Stylesheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.css">
+    
+    <link rel="stylesheet" href="css/main.css">
+    <!--jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/core.js"></script>
+
+    <script defer src="https://www.gstatic.com/firebasejs/3.3.0/firebase.js"></script>
+    <script defer src="lib/md5.min.js"></script>
+    <script defer src="js/common.js"></script>
+    <script defer src="js/signup.js"></script>      
+</head>
+<body>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo center">slvck!</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+            </ul>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <h1>Sign Up</h1>
+
+        <form id="signup-form">
+            <!-- EMAIL -->
+            <div class="input-field">
+                <input id="email-input" type="email" class="validate" placeholder="your email address" required="" data-error="wrong" data-success="right" required="" autofocus>
+                <label class="active" for="email">Email</label>
+            </div>
+            <!-- DISPLAY NAME-->
+            <div class="input-field">
+                <input id="display-name-input" type="text" required title="display name required" pattern=".{1,}" class="validate">
+                <label class="active" for="display-name-input">Display Name:</label>
+            </div>
+            <!-- PASSWORD -->
+            <div class="input-field">
+                <input id="password-input" type="password" required title="6 or more characters" pattern=".{6,}" class="validate">
+                <label class="active" for="password" data-error="wrong" data-success="right">Password:</label>
+            </div>
+            <!-- CONFIRM PASSWORD -->
+            <div class="input-field">
+                <input id="password-confirm" type="password" class="validate" placeholder="Re-enter password">
+                <label class="active" for="password" data-error="wrong" data-success="right">Confirm Password:</label>
+            </div>
+
+            <!-- SUBMIT BUTTON -->
+            <div class="button-div">
+                <button class="waves-effect waves-light btn" type="submit">Sign Up</button>
+            </div>   
+        </form>
+        <p align="center">Already have an account? <a href="index.html">Sign In</a></p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,69 @@
+/* add your own style rules here */
+#name {
+    padding-left: 20px;
+    text-decoration: none;
+}
+
+.right a {
+    padding-right: 20px;
+    text-decoration: none;
+}
+
+.right a:hover {
+    color: teal;
+}
+
+.button-div {
+    text-align: center;
+}
+
+#submit-msg {
+    display: inline-block;
+    float: right;
+}
+
+.msg-creation {
+    margin-left: 7rem;
+    font-size: 80%;
+    color: #888;
+}
+
+.msg-edited {
+    margin-left: 7rem;
+    font-size: 80%;
+    color: #888;
+}
+
+.msg-content {
+    margin-left: 7rem;
+    margin-top: 0px;
+    /*position: fixed;*/
+}
+
+.msg-box {
+    min-height: 100px;
+    margin-bottom: 1em;
+}
+
+.user-image {
+    float: left;
+}
+
+.glyphicon-trash {
+    float: right;
+}
+
+.glyphicon-pencil {
+    float: right;
+}
+
+.glyphicon {
+    display: none;
+}
+
+div.msg-box:hover button {
+    display: block;
+}
+
+
+

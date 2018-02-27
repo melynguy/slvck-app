@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>slvck!</title>
+    <link rel="icon" href="img/page-icon.png">
+
+     <!--Bootstrap stylesheet-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Materialize Stylesheet -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script defer src="https://www.gstatic.com/firebasejs/3.3.0/firebase.js"></script>
+
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.14.1/moment-with-locales.min.js"></script>
+    <script defer src="js/common.js"></script>
+    <script defer src="js/messages.js"></script> 
+</head>
+<body>
+    <nav>
+        <div class="nav-wrapper black">
+            <a href="#!" class="brand-logo left" id="name">slvck!</a>
+            <ul class="right">
+            <li><a href="#" id="general">#General</a></li>
+            <li><a href="#" id="random">#Random</a></li>
+            <li><a id="sign-out-button" type="submit">Sign Out</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container" id="msg-txt-form">
+        <form class="new-msg-form">
+            <div class="input-field">
+                <input type="text"
+                class="form-control new-msg-content"
+                placeholder="press 'enter' to submit new message..."
+                required autofocus>
+            </div>
+        </form>
+        <div class="msgList"></div>
+    </div>
+
+</body>
+</html>
